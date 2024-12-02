@@ -3,54 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai Kiran Reddy Portfolio</title>
+  <title>Sai Kiran Reddy - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Sai Kiran Reddy</h1>
-    <p>DevOps and Cloud Computing Enthusiast</p>
+    <nav>
+      <h1 class="logo">Sai Kiran Reddy</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h2>Hi, I'm Sai Kiran Reddy</h2>
+      <p>DevOps Enthusiast | Cloud Computing | Software Developer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </section>
   </header>
 
   <section id="about">
-  <h2>About Me</h2>
-  <img src="profile.jpg" alt="Sai Kiran Reddy" style="width: 200px; border-radius: 50%;">
-  <p>
-    Hi, I’m Sai Kiran Reddy, a Master’s in Computer Science graduate with expertise in DevOps, cloud computing, and automation.
-    I’m passionate about building scalable solutions and solving real-world problems.
-  </p>
+    <h2>About Me</h2>
+    <div class="content">
+      <img src="profile.JPG" alt="Sai Kiran Reddy" class="profile-img">
+      <p>
+        I am a Master’s in Computer Science graduate with a strong passion for DevOps, cloud computing, and software automation. 
+        My expertise includes building CI/CD pipelines, managing scalable infrastructure, and developing automation solutions 
+        to enhance performance and efficiency.
+      </p>
+    </div>
   </section>
-
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>DevOps: Jenkins, GitLab CI/CD, Docker, Kubernetes</li>
-      <li>Cloud Computing: AWS (S3, EC2, Lambda), Terraform</li>
-      <li>Programming: Python, Bash, Shell Scripting</li>
-    </ul>
+    <div class="skills-container">
+      <div class="skill">Python</div>
+      <div class="skill">AWS</div>
+      <div class="skill">Jenkins</div>
+      <div class="skill">Kubernetes</div>
+      <div class="skill">Terraform</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Prometheus</div>
+      <div class="skill">Git</div>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div>
-      <h3>CI/CD Pipeline with Jenkins and Kubernetes</h3>
-      <p>Developed a scalable CI/CD pipeline, reducing deployment time by 30%.</p>
-    </div>
-    <div>
-      <h3>Cloud Cost Optimization</h3>
-      <p>Automated cloud cost reporting, reducing expenses by 20%.</p>
+    <div class="projects-container">
+      <div class="project">
+        <h3>CI/CD Pipeline</h3>
+        <p>Built a scalable CI/CD pipeline using Jenkins and Kubernetes, reducing deployment time by 30%.</p>
+      </div>
+      <div class="project">
+        <h3>Cloud Cost Optimization</h3>
+        <p>Automated cost monitoring on AWS, reducing cloud expenses by 20%.</p>
+      </div>
+      <div class="project">
+        <h3>Dockerized Microservices</h3>
+        <p>Containerized a monolithic application into microservices, improving scalability by 40%.</p>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: srukkamolla@hawk.iit.edu</p>
-    <p>GitHub: <a href="https://github.com/">github.com/username</a></p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2024 Sai Kiran Reddy. All rights reserved.</p>
+    <p>&copy; 2024 Sai Kiran Reddy. All rights reserved.</p>
   </footer>
 </body>
 </html>
